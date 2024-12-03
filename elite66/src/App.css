@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Matter';
+    src: url('/matter-regular.woff2')format('woff2');
+}
+
+@font-face {
+    font-family: Mazius;
+    src: url('/Mazius.otf');
+}
+
+body {
+    font-family: 'Matter', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
