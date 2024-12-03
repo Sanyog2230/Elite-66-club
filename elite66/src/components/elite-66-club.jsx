@@ -22,7 +22,7 @@ export function Elite_66ClubJsx() {
       {/* Header */}
       <header className="fixed w-full z-10">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl text-[#f8bb38] font-[Mazius]">Elite 66 Club</h1>
+          <img src="./logo.png" alt="" className="w-16" />
           <nav className="hidden md:flex space-x-6">
             <a href="#home" className="text-gold hover:text-gold/80">Home</a>
             <a href="#about" className="text-gold hover:text-gold/80">About</a>
