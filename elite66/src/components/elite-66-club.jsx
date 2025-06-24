@@ -3,8 +3,11 @@ import { Button } from "../components/ui/button"
 import { Input } from "../components/ui/input"
 import { Label } from "../components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select"
-import { Instagram, Menu, X } from "lucide-react"
+import { Instagram, Menu, MessageCircle, Twitter, X } from "lucide-react"
 import { BookingFormJsx } from "./booking-form"
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 export function Elite_66ClubJsx() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,10 +23,17 @@ export function Elite_66ClubJsx() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Header */}
-      <header className="fixed w-full z-10">
+      <header className="fixed w-full z-10 bg-black px-5 ">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <img src="./logo.png" alt="" className="w-16" />
-          <nav className="hidden md:flex space-x-6">
+          <div className="flex gap-5 text-3xl text-[#F8BB38]  ">
+              <p><FaInstagram /></p>
+             <p> <FaWhatsapp /></p>
+              <p><FaTwitter /></p>
+          </div>
+
+
+          <img src="./logo.png" alt="" className="w-16 ml-[11vw] " />
+          <nav className="hidden md:flex space-x-6 text-[#F8BB38] text-xl ">
             <a href="#home" className="text-gold hover:text-gold/80">Home</a>
             <a href="#about" className="text-gold hover:text-gold/80">About</a>
             <a href="#instagram" className="text-gold hover:text-gold/80">Instagram</a>
@@ -50,7 +60,8 @@ export function Elite_66ClubJsx() {
       <div className="absolute inset-0 bg-black/50">
       <div className="container mx-auto text-center py-20 flex flex-col justify-center items-center h-full">
           <h2 className="text-5xl font-bold mb-4">Welcome to Elite 66 Club</h2>
-          <p className="text-xl mb-8">Experience Luxury and Exclusivity</p>
+          <p className="text-xl mb-4">Experience Luxury and Exclusivity</p>
+          <button className="uppercase py-3 px-9 bg-[#F8BB38] rounded-full text-black font-medium hover:bg-[#000000]/60 hover:text-[#F8BB38] hover:border-[1.6px] border-[#F8BB38] hover:scale-105 transition duration-300 ease-in-out  ">book now</button>
         </div>
       </div>
         
@@ -93,7 +104,7 @@ export function Elite_66ClubJsx() {
       <section id="about" className="py-16 px-4 bg-black/80">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center text-[#f8bb38] font-[Mazius]">About Elite 66 Club</h2>
-          <p className="text-2xl mb-6 max-w-2xl mx-auto">
+          <p className="text-4xl mb-6 max-w-4xl leading-9 mx-auto">
             Elite 66 Club is the epitome of luxury nightlife. Our exclusive venue offers a unique blend of sophistication,
             world-class entertainment, and unparalleled service. From our state-of-the-art sound system to our premium
             bottle service, every detail is crafted to ensure an unforgettable experience.
